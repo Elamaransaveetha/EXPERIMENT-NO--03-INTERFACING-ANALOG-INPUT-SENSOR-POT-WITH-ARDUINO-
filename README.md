@@ -66,7 +66,38 @@ CIRCUIT DIAGRAM
 
 
 
-**PROGRAM** 
+**PROGRAM**
+```
+ELAMARAN
+212222040041
+B.E CSE
+```
+```
+ int potPin=A5;
+int ledPin= 2;
+ void setup()
+ {
+   pinMode(potPin ,INPUT);
+   pinMode(ledPin, OUTPUT);
+   Serial.begin(9600);
+   
+ }
+
+  void loop()
+{
+ int potMesure = analogRead(A5);
+  Serial.print("Sensor Value: ");
+  Serial.println(potMesure);
+  if (potMesure>=650)
+  {
+    digitalWrite(2, HIGH);
+  }
+  else
+    digitalWrite(2, LOW);
+  
+  
+}
+```
  
 
 
@@ -79,10 +110,12 @@ CIRCUIT DIAGRAM
 
 **
 **Simulation output:** 
-**
+## BEFORE STIMULATION:
+![EX 3](https://github.com/Elamaransaveetha/EXPERIMENT-NO--03-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/119560403/ff56c780-f3e3-42b8-86d7-3e880592d4f6)
+## AFTER SIMULATION
+![EX 4](https://github.com/Elamaransaveetha/EXPERIMENT-NO--03-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/119560403/81a063e9-8012-4116-b9a9-f36d0726e2cc)
 
 
-[My image](username.github.com/repository/img/image.jpg)
 
 
 
